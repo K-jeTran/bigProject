@@ -1,0 +1,240 @@
+:root {
+    --colorMain: gold;
+    --colorB: black;
+    --colorW: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI","Segoe WP",Arial,Sans-Serif;
+    color: var(--colorW);
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: var(--colorB);
+}
+
+@keyframes doimau {
+    0% {
+      color: var(--colorMain);
+    }
+    20% {
+      color: lightblue;
+    }
+    40% {
+        color: orange;
+    }
+    60% {
+      color: #d61dee;
+    }
+    80% {
+        color: red;
+    }
+    100% {
+      color: var(--colorMain);
+    }
+}
+
+.top-head {
+    padding: 20px 30px;
+}
+
+.web-name h1 {
+    animation: doimau 2s infinite;
+    font-family: 'Raleway', sans-serif;
+}
+
+.web-name h1:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+#time {
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 1px solid var(--colorMain);
+}
+
+.header-social {
+    margin-left: auto;
+}
+
+.header-social .fa-brands {
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+.header-social .fa-brands:hover {
+    transition: all 0.5s;
+    transform: scale(1.3);
+    color: var(--colorMain);
+}
+
+.list-icon {
+    display: none;
+}
+
+#nav {
+    margin: 10px;
+    justify-content: space-between;
+}
+
+
+.menu ul {
+    top: 42px;
+    left: 0;
+}
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+}
+
+.menu li {
+    float:left;
+    width: 150px;
+    line-height: 1.5rem;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-right: 1px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+.search {
+    margin-right: 30px;
+}
+
+.nav-bar li a {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav-bar li a {
+    color: #fff;
+}
+
+.nav-bar li a:hover {
+    color: #fff;
+}
+
+.nav-bar li:hover {
+    background-color: var(--colorMain);
+}
+
+li.first-li-head {
+    background-color: var(--colorMain);
+}
+
+.nav-bar ul li {
+    color: var(--colorMain);
+    background-color: #252525;
+    color: #fff;    
+    padding: 10px;
+}
+
+.search > div {
+    height: 40px;
+    padding: 0 15px;
+    width: 230px;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+}
+
+.search > div input {
+    outline: none;
+    font-style: italic;
+    border: none;
+    color: var(--colorB);
+}
+
+.search a {
+    padding: 8px;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0px;
+}
+
+.search a:hover,
+.search a:hover i {
+    background-color: var(--colorMain);
+    color: var(--colorW);
+} 
+
+.search i {
+    color: gold;
+}
+
+#hot-text {
+    width: 300px;
+    font-size: 1rem;
+    padding: 20px;
+    color: var(--colorMain);
+    font-weight: 800;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.hot-content {
+    padding: 10px;
+    color: var(--colorW);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.hot-content:hover {
+    color: var(--colorMain);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.go {
+    position: fixed;
+    color: var(--colorB);
+    background-color: var(--colorW);
+    padding: 0.6rem;
+    font-size: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border: 0.1mm solid var(--colorB);
+    opacity: 0.8;
+    z-index: 1;
+}
+ 
+.go:hover {
+    background-color: var(--colorB);
+    color: var(--colorW);
+    padding: 0.8rem;
+    border: 0.1mm solid var(--colorW);
+    opacity: 1;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+section {
+    height: 2000px;
+}
